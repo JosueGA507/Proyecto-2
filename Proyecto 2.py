@@ -74,7 +74,7 @@ def imprimir_tablero(tablero):
     for fila in tablero:
         print(''.join(map(str, fila)))
 
-# Entrada del usuario
+
 print("Ingrese el largo, ancho y cantidad de piezas separados por espacios:")
 largo, ancho, cantidad_piezas = map(int, input().split())
 tablero = crear_matriz(largo, ancho)
@@ -88,5 +88,5 @@ for _ in range(cantidad_piezas):
 # Solución
 tablero_final = Colocar(tablero, piezas)
 
-# Imprimir resultado
+
 imprimir_tablero(tablero_final)
